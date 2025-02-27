@@ -3,10 +3,17 @@ import './Offers.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 const Offers = () => {
   return (
     <>
+     <img 
+                className="img-fluid" 
+                style={{width: '100%', height: 'auto', maxWidth: '1536px', maxHeight: '600px'}} 
+                src="https://images.pexels.com/photos/7213094/pexels-photo-7213094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                alt="" 
+            />
       <div className="text-center" id="offers">
         <h3>OUR MENU</h3>
         <div className="container mt-5">
@@ -19,7 +26,7 @@ const Offers = () => {
                   <Card.Text>
                   A special blend of spices is used for the biryani
                   </Card.Text>
-                  <Button variant="warning">Order Now</Button>
+                  <Link to={'/dish1'}><Button variant="warning">Order Now</Button></Link>
                 </Card.Body>
               </Card>
             </div>
@@ -31,7 +38,7 @@ const Offers = () => {
                   <Card.Text>
                  It is a type of curry made from chicken with a spiced tomato and butter sauce
                   </Card.Text>
-                  <Button variant="warning">Order Now</Button>
+                  <Link to={'/dish2'}><Button variant="warning">Order Now</Button></Link>
                 </Card.Body>
               </Card>
             </div>
@@ -43,7 +50,7 @@ const Offers = () => {
                   <Card.Text>
                   Crispy, soft crust, with tomato basil pizza sauce, mozzarella cheese .
                   </Card.Text>
-                  <Button variant="warning">Order Now</Button>
+                  <Link to={'/dish3'}><Button variant="warning">Order Now</Button></Link>
                 </Card.Body>
               </Card>
             </div>
@@ -55,7 +62,7 @@ const Offers = () => {
                   <Card.Text>
                   South Indian dish, layered parotta bread is served with  spicy beef curry
                   </Card.Text>
-                  <Button variant="warning">Order Now</Button>
+                  <Link to={'/dish4'}><Button variant="warning">Order Now</Button></Link>
                 </Card.Body>
               </Card>
             </div>
@@ -72,7 +79,7 @@ const Offers = () => {
                   <Card.Text>
                    mixed with a silky smooth white sauce made of milk, butter and flour.
                   </Card.Text>
-                  <Button variant="warning">Order Now</Button>
+                  <Link to={'/dish5'}><Button variant="warning">Order Now</Button></Link>
                 </Card.Body>
               </Card>
             </div>
@@ -84,7 +91,7 @@ const Offers = () => {
                   <Card.Text>
                   It consists mainly of meat and rice with a blend of spices,cooked in a pit.
                   </Card.Text>
-                  <Button variant="warning">Order Now</Button>
+                  <Link to={'/dish6'}><Button variant="warning">Order Now</Button></Link>
                 </Card.Body>
               </Card>
             </div>
@@ -96,7 +103,7 @@ const Offers = () => {
                   <Card.Text>
                   A popular Japanese dish featuring Chinese-style wheat noodles
                   </Card.Text>
-                  <Button variant="warning">Order Now</Button>
+                  <Link to={'/dish7'}><Button variant="warning">Order Now</Button></Link>
                 </Card.Body>
               </Card>
             </div>
@@ -108,7 +115,7 @@ const Offers = () => {
                   <Card.Text>
                   A type of steamed filled dumpling in Tibetan and Nepali cuisine
                   </Card.Text>
-                  <Button variant="warning">Order Now</Button>
+                  <Link to={'/dish8'}><Button variant="warning">Order Now</Button></Link>
                 </Card.Body>
               </Card>
             </div>
